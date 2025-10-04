@@ -1,0 +1,11 @@
+This is a temporary summary for tables since I dont have my copybook with me :) :
+
+-A table organizes data into rows and columns.
+<table></table>--> the table container
+<tr>-->A new table row.
+<th>-->table header cell (bold, centered by default).
+<td>-->table data cell (normal content).
+
+Note: the table only takes the width that it needs unlike many other elements in html.
+
+If you want a collon to take the place of two collons it's td colspan="2" , if you want a row to take the place of two it's td=rowspan=2
