@@ -8,4 +8,12 @@ This is a temporary summary for tables since I dont have my copybook with me :) 
 
 Note: the table only takes the width that it needs unlike many other elements in html.
 
-If you want a collon to take the place of two collons it's td colspan="2" , if you want a row to take the place of two it's td=rowspan=2
+If you want a collon to take the place of two collons it's td colspan="2" , if you want a row to take the place of two it's <td rowspan="2">..</td>
+
+You can have a title for the table by using <caption>
+
+Note: you can have sections like regular code by using : <thea>(for the table head),<tbody> for the body of the table , <tfoot> for the footer of the table.
+
+For semantics you can add a few thing such as , ID for every row heading (not necessary), but its better to add scope for every row and collomn heading , such as :
+
+<th scope="row"> and <th scope="col">
