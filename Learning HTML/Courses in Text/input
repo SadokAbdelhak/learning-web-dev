@@ -1,0 +1,19 @@
+Inputs:
+
+-The <form> element is used to collect user input and send it to a server for processing:
+       -Action-> the url where the form data is sent.(We used https://httpbin.org/get).
+       -method-> how its sent (Get or post)
+    -Elements inside form:
+       -<label for=""> is used to describe an input field
+       -<input>: the main tag for user input in html forms , common attributes:
+            type:Defines the kind of input (text,password,email,tel...)
+            name:the variable name sent to the server.
+            value:the default value.
+            placeholder:hint text shown inside the input.
+            id:used to link with <label> (must match the thing inside the for"").
+            required:makes the field mandatory.
+            randonly:user cant change the value.
+            disabled:field is greyed out and not sent.
+            maxlength:sets max of num of chars.
+            autocomplete:it can offer autofill suggestions (it has semantic tokens such as : name,given-name,family-name,email,username,current-password,new-password,tel,street-adress,adress-line1,adress-line2,city,region,postal-code,country,cc-number,cc-exp,cc-csc,organization,bday)
+            autofocus:a boolean attribute that tells the browser to try to put keyboard focus on that element when the page loads.

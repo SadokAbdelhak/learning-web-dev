@@ -140,7 +140,34 @@
       <article id="Contact">
         
         <h2>Contact me</h2>
-          <form action="h"></form>
+          <form action="https://httpbin.org/get" method="get">
+            <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Samir" autocomplete="on" required autofocus>
+            </p>
+            <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="firstName" placeholder="Sadok" autocomplete="on" required>
+            </p>
+            <p>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password" placeholder="Your Secret" required>
+            </p>
+            <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            </p>
+            <p>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="0655855544" pattern="[0]{1}[0-9]{9}" maxlength="10" required>
+            </p>
+            <p>
+            <label for="Year">The Best Year</label>
+            <input type="number" name="Year" id="Year"  min="2010" max="2025" step="1" value="2010" required>
+            </p>
+
+
+          </form>
       </article>
   </main>
     <hr>
