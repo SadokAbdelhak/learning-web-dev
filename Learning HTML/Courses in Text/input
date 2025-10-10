@@ -17,3 +17,46 @@ Inputs:
             maxlength:sets max of num of chars.
             autocomplete:it can offer autofill suggestions (it has semantic tokens such as : name,given-name,family-name,email,username,current-password,new-password,tel,street-adress,adress-line1,adress-line2,city,region,postal-code,country,cc-number,cc-exp,cc-csc,organization,bday)
             autofocus:a boolean attribute that tells the browser to try to put keyboard focus on that element when the page loads.
+       -<select>:used to create a dropdown list so the user could choose one. Key attributes in it:
+             id:must match the label.
+             name:like input.
+             <option>:each coice in dropdown.
+                   value:what gets sent when chosen.
+                   selected:makes option pre selected.
+                   disabled:makes option unselectable.
+                   multiple:allows selecting more than one.
+                   size:shows multiple options at once.
+                  Note:to organize the list of options we do <optgroup> which has an attribute which is label (optgroup label="").
+         --WE CAN ALSO SELECT WITH <input>:
+          thats by adding list into the attributes of input <input type.... list="country-list"> then the element <datalist id="country-list"> (-Must match the list name in input)
+
+          <fieldset>:comes after the form and it specifies.
+           <legend>: specifies what is going on in that field set.
+
+
+         If you want to make optional choises , you can name them the same name and change , also have the input before the label also gaving the radio as the type for input (ibput type="Radio")
+
+         another type of input is "Checkbox" what it essentially does is select one or more options from a list.
+
+         If you want a text to be sent to your form use the <textarea> element which has these attributes: name, id, cols: how many characters wide it is., rows: how many lines tall the box is.maxlength,required,placeholder,disabled,autofocus,wrap:controls how text wraps.
+
+
+         Finally the button element , it is <button> and it have attribites : type=submit: to submit.
+                                                                              type=reset: to reset everything.
+                  
+
+          If you want to send the info to a different link you can do a button at the end that goes like this : <button type="submit" formaction="https.." formmethod="get/post">
+
+                  the other form action is post , the difference between get and post : purpose : get:used to request data (like earch or view info)
+                                                                                                  psot:used to  send or submit data(like login or forms)
+                                                                                       data location: get:sent in the url
+                                                                                                      post:sent in the http body (hidden from url)
+                                                                                       visibility: get:data is visible in adress bar.
+                                                                                                   post:data is hidden
+                                                                                       security: get:not safe for passwords or privat info 
+                                                                                                post:safe for sensitive data.
+                                                                                       size limit: get: limited (2000chat)
+                                                                                                   post:can send large amounts of data.
+                                                                                       caching: get : gets cached and save in history
+                                                                                                post:not chached
+                                                                                       typical use: serches, filters,reading data.                                          

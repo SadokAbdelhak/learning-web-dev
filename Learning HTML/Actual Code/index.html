@@ -141,6 +141,8 @@
         
         <h2>Contact me</h2>
           <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+              <legend>Personal info</legend>
             <p>
             <label for="firstName">First Name:</label>
             <input type="text" name="firstName" id="firstName" placeholder="Samir" autocomplete="on" required autofocus>
@@ -165,8 +167,75 @@
             <label for="Year">The Best Year</label>
             <input type="number" name="Year" id="Year"  min="2010" max="2025" step="1" value="2010" required>
             </p>
+            <p>
+            <label for="Country">Country</label>
+            <select name="Country" id="Country">
+              <optgroup label="Africa">
+                <option value="Algeria">Algeria</option>
+                <option value="Morocco">Morroco</option>
+                <option value="Tunisia">Tunisia</option>
+                </optgroup>
+                <optgroup label="Europe">
+                <option value="France">France</option>
+                </optgroup>
+                <option value="other" selected>Other</option>
+            </select>
+          </fieldset>
 
+            </p>
+            <p>
+              <fieldset>
+                <legend>Preferences</legend>
+             <label for="F1">Favorite F1 Driver:</label>
+             <input type="text" name="favoritef1" id="F1" list="f1-list"> 
+             <datalist id="f1-list">
+              <option value="Greoge Russel">
+              <option value="Max Verstappen">
+              <option value="Charles Leclerc">
+              <option value="Lewis Hamilton">
+             </datalist>
 
+            
+              </fieldset>
+            <fieldset>
+              <legend>Favorite Motorsport:</legend>
+              <p>
+                <input type="radio" name="Motorsport" id="f1">
+                <label for="f1">F1</label>
+              </p>
+             <p>
+              <input type="radio" name="Motorsport" id="motogp">
+              <label for="MotoGp" id="motogp">Moto Gp</label>
+             </p>
+             <p>
+              <input type="radio" name="Motorsport" id="WEC">
+              <label for="WEC">WEC</label>
+             </p>
+
+            </fieldset>
+            <fieldset><legend>Your favorite football teams?</legend>
+              <p><input type="checkbox" name="Teams" id="Arsenal">
+               <label for="Arsenal">Arsenal</label></p>
+              <p><input type="checkbox" name="Teams" id="Barcelona">
+              <label for="Barcelona">Barcelona</label></p>
+              <p><input type="checkbox" name="Teams" id="Real-Madrid">
+              <label for="Real-Madrid">Real Madrid</label></p>
+              <p><input type="checkbox" name="Teams" id="Liverpool">
+              <label for="Liverpool">Liverpool</label></p> 
+              <p>
+                <input type="checkbox" name="Teams" id="Other2">
+                <label for="Other2">Other</label>
+              </p>
+            </fieldset>
+           <fieldset> 
+            <legend>Feedback</legend>
+            <label for="feedback"></label>
+             <textarea name="feedback" id="feedback" cols="50" rows ="2"></textarea>
+
+           </fieldset>
+          <button type="submit">Submit everything</button>
+          <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+          <button type="reset">Reset Everything</button>
           </form>
       </article>
   </main>
